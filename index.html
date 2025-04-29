@@ -6,56 +6,153 @@
     <title>Caleb R. John</title>
     <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3398/3398643.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
         body {
-            font-family: 'Space Mono', monospace;
+            font-family: 'JetBrains Mono', monospace;
+            background-color: #0e1117;
+            color: #a0e882;
+        }
+        .terminal {
+            background-color: #0e1117;
+            border: 1px solid #a0e882;
+            border-radius: 4px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 10px rgba(160, 232, 130, 0.2);
+        }
+        .terminal-header {
+            border-bottom: 1px solid #a0e882;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .terminal-prompt {
+            color: #a0e882;
+            margin-right: 0.5rem;
+        }
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 18px;
+            background-color: #a0e882;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        a {
+            color: #36c7f4;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #a0e882;
+            text-decoration: underline;
         }
     </style>
 </head>
-<body class="bg-zinc-800 text-white p-4">
+<body class="p-4">
     <div class="max-w-4xl mx-auto">
-        <header class="border-4 border-white p-4 mb-8">
-            <h1 class="text-4xl font-bold">Caleb R. John</h1>
+        <header class="terminal">
+            <div class="terminal-header">
+                <span class="text-red-500 mr-2"><i class='bx bxs-circle'></i></span>
+                <span class="text-yellow-500 mr-2"><i class='bx bxs-circle'></i></span>
+                <span class="text-green-500 mr-2"><i class='bx bxs-circle'></i></span>
+                <span class="ml-2">~/crj</span>
+            </div>
+            <div class="flex items-center">
+                <span class="terminal-prompt text-2xl font-bold">$</span>
+                <h1 class="text-2xl font-bold ml-2"><span id="typed-name"></span></h1>
+                <span class="cursor ml-1"></span>
+            </div>
         </header>
 
         <main>
-            <section id="about" class="mb-12 border-4 border-white p-4">
-                <h2 class="text-2xl font-bold mb-4">About Me</h2>
-                <p class="my-2">I am a entrepreneur, angel investor, and engineer based in Seattle, WA.</p>
-                <p class="my-2">I briefly attended the University of Washington before dropping out, and have been working with different AI form factors for the past 7 years.</p>
+            <section id="about" class="terminal">
+                <div class="terminal-header">
+                    <i class='bx bxs-user-detail mr-2'></i>
+                    <span>~/crj/about.txt</span>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4"><span class="terminal-prompt">$</span>About Me</h2>
+                    <ul class="list-none">
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> I am an entrepreneur, angel investor, and engineer.</li>
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> I've been working on using AI to solve real problems for the past decade.</li>
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> I'm currently working on delivering AI to enterprises @ <a target="_blank" class="underline" href="https://flatfile.com">Flatfile</a>.</li>
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> I'm based in Seattle but spend most of my time in SF and NYC.</li>
+                    </ul>
+                </div>
             </section>
 
-            <section id="projects" class="mb-12 border-4 border-white p-4">
-                <h2 class="text-2xl font-bold mb-4">Other Things I've Done</h2>
-                <ul class="list-disc list-inside">
-                    <li class="my-1">I Co-founded <a class="underline" target="_blank" href="https://ai-office-hours.beehiiv.com/p/re-ranking-rag">Pongo (acquired by M87 Labs)</a> - Best in class AI search ranking system.</li>
-                    <li class="my-1">I Founded <a class="underline" target="_blank" href="https://x.com/TechCrunch/status/1045503108778876928">Cedar Robotics</a> - Robot Waiters for restaurants.</li>
-                    <li class="my-1">I also briefly worked on AI for National Security @ <a class="underline" target="_blank" href="https://anduril.com">Anduril Industries</a>.</li>
-                </ul>
-            </section>  
-
-            <section id="media" class="mb-12 border-4 border-white p-4">
-                <h2 class="text-2xl font-bold mb-4">Media</h2>
-                <ul class="list-disc list-inside">
-                    <li class="my-1"><a class="underline" target="_blank" href="https://www.forbes.com/sites/forbesunder30team/2023/08/09/30-under-30-local-2023-seattle/">Forbes Under 30</a></li>
-                    <li class="my-1"><a class="underline" target="_blank" href="https://open.spotify.com/episode/2debvFd2r2D7BROlkaKeOA?si=P3WQ2uBCTBKCjEVjAV6ZYA">Searching For Something Podcast</a></li>
-                    <li class="my-1"><a class="underline" target="_blank" href="https://archive.ph/wIqhI">Puget Sound Business Journal</a></li>
-                    <li class="my-1"><a class="underline" target="_blank" href="https://www.425business.com/special_reports/30-under-30-2018/article_698f0c92-a0ab-5786-b6b2-343a12f532e0.html">425 Business</a></li>
-                </ul>
+            <section id="projects" class="terminal">
+                <div class="terminal-header">
+                    <i class='bx bxs-folder mr-2'></i>
+                    <span>~/crj/main.txt</span>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4"><span class="terminal-prompt">$</span>Things I've Done</h2>
+                    <ul class="list-none">
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> I Co-founded <a target="_blank" class="underline" href="https://ai-office-hours.beehiiv.com/p/re-ranking-rag">Pongo (acquired by M87 Labs)</a> - Best in class AI search ranking system.</li>
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> I Founded <a target="_blank" class="underline" href="https://x.com/TechCrunch/status/1045503108778876928">Cedar Robotics</a> - Robot Waiters for restaurants.</li>
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> I worked on AI for National Security @ <a target="_blank" class="underline" href="https://anduril.com">Anduril Industries</a>.</li>
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> I also briefly attended the University of Washington before dropping out.</li>
+                    </ul>
+                </div>
             </section>
 
-            <section id="contact" class="mb-12 border-4 border-white p-4">
-                <h2 class="text-2xl font-bold mb-4">Contact</h2>
-                <ul>
-                    <li class="my-1">Email: <a href="mailto:cajohn0205@gmail.com" target="_blank" class="underline">cajohn0205@gmail.com</a></li>
-                    <li class="my-1">X (Twitter): <a href="https://x.com/CalebJohn24" target="_blank" rel="noopener noreferrer" class="underline">@calebjohn24</a></li>
-                </ul>
+            <section id="media" class="terminal">
+                <div class="terminal-header">
+                    <i class='bx bxs-news mr-2'></i>
+                    <span>~/crj/media.txt</span>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4"><span class="terminal-prompt">$</span>Media</h2>
+                    <ul class="list-none">
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> <a target="_blank" class="underline" href="https://www.forbes.com/sites/forbesunder30team/2023/08/09/30-under-30-local-2023-seattle/">Forbes Under 30</a></li>
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> <a target="_blank" class="underline" href="https://open.spotify.com/episode/2debvFd2r2D7BROlkaKeOA?si=P3WQ2uBCTBKCjEVjAV6ZYA">Searching For Something Podcast</a></li>
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> <a target="_blank" class="underline" href="https://archive.ph/wIqhI">Puget Sound Business Journal</a></li>
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> <a target="_blank" class="underline" href="https://www.425business.com/special_reports/30-under-30-2018/article_698f0c92-a0ab-5786-b6b2-343a12f532e0.html">425 Business</a></li>
+                    </ul>
+                </div>
             </section>
+
+            <section id="media" class="terminal">
+                <div class="terminal-header">
+                    <i class='bx bxs-chart mr-2'></i>
+                    <span>~/crj/etc.txt</span>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4"><span class="terminal-prompt">$</span>Angel Investments & Advisory Roles</h2>
+                    <ul class="list-none">
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> <a target="_blank" class="underline" href="https://www.mediscan.ai/">MediscanAI</a> - AI for medical insurance claims</li>
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> <a target="_blank" class="underline" href="https://videogen.io/">VideoGen</a> - Create videos with AI in seconds</li>
+                        <li class="my-1.5"><i class='bx bx-chevron-right'></i> <a target="_blank" class="underline" href="https://electricera.tech/">Electric Era</a> - Next generation electric vehicle charging</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="contact" class="terminal">
+                <div class="terminal-header">
+                    <i class='bx bxs-contact mr-2'></i>
+                    <span>~/crj/info.txt</span>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4"><span class="terminal-prompt">$</span>Contact</h2>
+                    <ul class="list-none">
+                        <li class="my-1.5"><i class='bx bx-envelope'></i> Email: <a href="mailto:cajohn0205@gmail.com" class="underline" target="_blank">cajohn0205@gmail.com</a></li>
+                        <li class="my-1.5"><i class='bx bxl-twitter'></i> X (Twitter): <a href="https://x.com/CalebJohn24" class="underline" target="_blank" rel="noopener noreferrer">@calebjohn24</a></li>
+                    </ul>
+                </div>
+            </section>
+
         </main>
 
-        <footer class="text-center mt-8 border-t-4 border-white pt-4">
-            <p>&copy; <span id="current-year"></span> Caleb R. John. All rights reserved.</p>
+        <footer class="text-center mt-8 pt-4 pb-2 text-gray-400">
+            <p><span class="terminal-prompt">$</span> echo "© <span id="current-year"></span> Caleb R. John. All rights reserved."</p>
         </footer>
     </div>
 
@@ -64,6 +161,21 @@
         document.addEventListener('DOMContentLoaded', () => {
             const currentYear = new Date().getFullYear();
             document.getElementById('current-year').textContent = currentYear;
+            
+            // Typing effect for name
+            const name = "Caleb R. John";
+            const typedNameElement = document.getElementById('typed-name');
+            let i = 0;
+            
+            function typeWriter() {
+                if (i < name.length) {
+                    typedNameElement.textContent += name.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            }
+            
+            typeWriter();
         });
 
         // Smooth scroll for navigation links
