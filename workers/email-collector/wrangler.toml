@@ -1,0 +1,10 @@
+name = "email-collector"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "email-subscribers"
+database_id = "da0f472f-7e1f-48e6-aaf2-468e0e307c53"
+

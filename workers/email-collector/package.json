@@ -1,0 +1,15 @@
+{
+  "name": "email-collector",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create email-subscribers",
+    "db:init": "wrangler d1 execute email-subscribers --file=./schema.sql",
+    "db:init:local": "wrangler d1 execute email-subscribers --local --file=./schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.54.0"
+  }
+}
