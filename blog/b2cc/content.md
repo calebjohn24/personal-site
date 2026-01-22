@@ -6,8 +6,6 @@ Over the past year I've been continually building different agentic workflows an
 
 Going into 2026 the single best way to build an "AI native startup" is to build an API first product that can easily be used by Claude Code. I believe in this so much that I think by 2030 any product without an API designed for agents will be dead.
 
-I was re-reading the Bezos API mandate from 2002 that led to AWS, and I see so many parallels to the cloud era. In fact I think the cloud boom of the 2010s is a better comparison to the AI boom but that's a different discussion altogether. The "API economy" coined by Twilio founder Jeff Lawson where a company would solve a hard problem like SMS, payments, etc and then provide an easy way for developers to integrate the solution as a black box is what led to the SAAS boom in the last decade. However for most SAAS products themselves building an API wasn't critical as a dashboard was much more intuitive for humans. That will very soon no longer be the case as agents which have been trained meticulously to write code will prefer products with high quality well documented APIs. If you want to really build something AI native, you should build for an agent as your end customer not a human.
-
 One of the best examples of this I've seen is Commenda, Spencer and Yaacov have turned their entire SAAS platform for entity and tax management into an API (https://api.docs.commenda.io/api-reference/global-indirect-tax/introduction).
 
 If I'm picking a vendor and vendor A has a strong API even if vendor B is 90% cheaper it doesn't matter. I will never be able to unlock productivity gains from agents from vendor B, slowing down my entire organization.
