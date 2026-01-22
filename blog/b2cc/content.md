@@ -49,7 +49,7 @@ This means the moats that SAAS companies relied on (high switching costs, integr
 - **API quality and reliability** - Agents will notice if you're down
 - **Data depth** - If you have proprietary data agents need, that's defensible
 - **Network effects** - But only if they're technical (integrations with other services agents use)
-- **Agent ecosystem** - Being the default choice that agents know about
+- **Agent ecosystem** - Being the default choice that agents know about, Vercel is the best example of this.
 
 Brand loyalty doesn't exist for agents. Claude Code doesn't care if you're a unicorn with great Series C coverage. It cares if your API works.
 
