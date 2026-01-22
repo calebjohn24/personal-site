@@ -126,6 +126,16 @@ body {
     transform: scale(1.2);
 }
 
+/* Back button (yellow minimize button) */
+.back-btn {
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+.back-btn:hover {
+    transform: scale(1.2);
+}
+
 .terminal-header__path {
     margin-left: var(--space-sm);
 }

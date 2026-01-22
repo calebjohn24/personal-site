@@ -20,6 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Yellow button (minimize button) goes back
+    const backButtons = document.querySelectorAll('.back-btn');
+    backButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            window.history.back();
+        });
+    });
+
     // Email form submission
     const form = document.getElementById('email-form');
     if (!form) return;
