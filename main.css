@@ -26,6 +26,9 @@
     --color-btn-minimize: #eab308;
     --color-btn-maximize: #22c55e;
     
+    /* Accent colors */
+    --color-pink: #d067d6;
+    
     /* Shadows */
     --shadow-glow: 0 0 10px rgba(160, 232, 130, 0.2);
     
@@ -212,37 +215,37 @@ a:hover {
    Blog Post Content Styles
    ========================================================================== */
 .post-content {
-    line-height: 1.8;
+    line-height: 2;
 }
 
 .post-content h2 {
     color: var(--color-accent);
     font-size: 1.5rem;
     font-weight: bold;
-    margin-top: var(--space-xl);
-    margin-bottom: var(--space-md);
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .post-content h3 {
     color: var(--color-accent);
     font-size: 1.25rem;
     font-weight: bold;
-    margin-top: var(--space-lg);
-    margin-bottom: 0.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .post-content p {
-    margin-bottom: var(--space-md);
+    margin-bottom: 1.5rem;
 }
 
 .post-content ul,
 .post-content ol {
     margin-left: var(--space-xl);
-    margin-bottom: var(--space-md);
+    margin-bottom: 1.5rem;
 }
 
 .post-content li {
-    margin-bottom: var(--space-sm);
+    margin-bottom: 0.75rem;
 }
 
 .post-content code {
@@ -257,7 +260,8 @@ a:hover {
     padding: var(--space-md);
     border-radius: var(--radius-md);
     overflow-x: auto;
-    margin-bottom: var(--space-md);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .post-content pre code {
@@ -269,7 +273,8 @@ a:hover {
     border-left: 3px solid var(--color-primary);
     padding-left: var(--space-md);
     margin-left: 0;
-    margin-bottom: var(--space-md);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     color: var(--color-text-muted);
 }
 
@@ -296,6 +301,7 @@ a:hover {
 .text-center { text-align: center; }
 .text-muted { color: var(--color-text-muted); }
 .text-gray { color: var(--color-text-dim); }
+.text-pink { color: var(--color-pink); }
 
 .mt-auto { margin-top: auto; }
 .ml-2 { margin-left: var(--space-sm); }
