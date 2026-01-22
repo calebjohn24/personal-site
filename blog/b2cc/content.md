@@ -86,11 +86,11 @@ The fascinating thing is that the companies best positioned for this shift are t
 
 The companies that are screwed are the ones that built beautiful dashboards and treated their API as an afterthought for "power users." Those companies are about to watch their market share evaporate as agents preferentially choose the vendors they can actually integrate with.
 
-I've already started seeing this in real-time. I needed a database solution last month and I had it narrowed down to two options. One had an incredible web console and mediocre API docs. The other had decent docs with clear examples. I chose the second one purely because Claude Code could set everything up without me having to click through dashboards. The first company lost a customer without ever knowing I was evaluating them.
+I've already started seeing this in real-time. I needed an email solution last week and I had it narrowed down to two options. One had an incredible web console and mediocre API docs. The other had decent docs with clear examples. I chose the second one purely because Claude Code could set everything up without me having to click through dashboards. The first company lost a customer without ever knowing I was evaluating them.
 
 ## This Is Just The Beginning
 
-We're maybe 6 months into the "agents as customers" era. Claude Code just launched in late 2025. Most companies haven't even realized this shift is happening yet. They're still thinking about "adding AI features" when they should be thinking about "becoming the vendor that AI agents prefer."
+We're maybe 6 months into the "agents as customers" era. Most companies haven't even realized this shift is happening yet. They're still thinking about "adding AI features" when they should be thinking about "becoming the vendor that AI agents prefer."
 
 By 2027 I predict that "agent success rate" will be a key metric companies track—what percentage of agents that try to integrate your service actually succeed? By 2028, I think we'll see the first agent-native companies that literally don't have a web dashboard at all, just an API and a docs site. By 2030, any product that can't be used by an agent will be as dead as a product without mobile support is today.
 
