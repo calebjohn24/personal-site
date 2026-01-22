@@ -13,7 +13,7 @@
     <div class="max-w-4xl mx-auto">
         <header class="terminal">
             <div class="terminal-header">
-                <span class="text-red-500 mr-2"><i class='bx bxs-circle'></i></span>
+                <span class="text-red-500 mr-2 home-btn"><i class='bx bxs-circle'></i></span>
                 <span class="text-yellow-500 mr-2"><i class='bx bxs-circle'></i></span>
                 <span class="text-green-500 mr-2"><i class='bx bxs-circle'></i></span>
                 <span class="ml-2">~/crj</span>
@@ -95,26 +95,23 @@
         </footer>
     </div>
 
+    <script src="main.js"></script>
     <script>
-        // Set current year in footer
+        // Typing effect for name (homepage only)
         document.addEventListener('DOMContentLoaded', () => {
-            const currentYear = new Date().getFullYear();
-            document.getElementById('current-year').textContent = currentYear;
-            
-            // Typing effect for name
             const name = "Caleb R. John";
             const typedNameElement = document.getElementById('typed-name');
-            let i = 0;
-            
-            function typeWriter() {
-                if (i < name.length) {
-                    typedNameElement.textContent += name.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, 100);
+            if (typedNameElement) {
+                let i = 0;
+                function typeWriter() {
+                    if (i < name.length) {
+                        typedNameElement.textContent += name.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, 100);
+                    }
                 }
+                typeWriter();
             }
-            
-            typeWriter();
         });
 
         // Smooth scroll for navigation links

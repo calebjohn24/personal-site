@@ -116,6 +116,16 @@ body {
 .terminal-header__btn--minimize { color: var(--color-btn-minimize); }
 .terminal-header__btn--maximize { color: var(--color-btn-maximize); }
 
+/* Home button (red close button) */
+.home-btn {
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+.home-btn:hover {
+    transform: scale(1.2);
+}
+
 .terminal-header__path {
     margin-left: var(--space-sm);
 }

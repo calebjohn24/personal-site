@@ -11,6 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
         yearEl.textContent = new Date().getFullYear();
     }
 
+    // Red button (close button) navigates to home
+    const homeButtons = document.querySelectorAll('.home-btn');
+    homeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Navigate to site root
+            window.location.href = '/';
+        });
+    });
+
     // Email form submission
     const form = document.getElementById('email-form');
     if (!form) return;
