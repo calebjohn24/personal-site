@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>First Principles | Caleb R. John</title>
+    <description>Thoughts and writings on startups, AI, and technology.</description>
+    <link>https://calebjohn.xyz/blog/</link>
+    <atom:link href="https://calebjohn.xyz/feed.xml" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jan 2026 00:00:00 GMT</lastBuildDate>
+    
+    <item>
+      <title>B2CC</title>
+      <link>https://calebjohn.xyz/blog/b2cc/</link>
+      <description>AI agents like Claude Code will be your most important customer very soon.</description>
+      <pubDate>Tue, 21 Jan 2026 00:00:00 GMT</pubDate>
+      <guid>https://calebjohn.xyz/blog/b2cc/</guid>
+    </item>
+  </channel>
+</rss>
