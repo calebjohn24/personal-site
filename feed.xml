@@ -6,7 +6,15 @@
     <link>https://calebjohn.xyz/blog/</link>
     <atom:link href="https://calebjohn.xyz/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jan 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 05 Feb 2026 00:00:00 GMT</lastBuildDate>
+    
+    <item>
+      <title>24</title>
+      <link>https://calebjohn.xyz/blog/24/</link>
+      <description>Personal reflections and life lessons from turning 24. Thoughts on ambition, risk, and carving your own path.</description>
+      <pubDate>Wed, 05 Feb 2026 00:00:00 GMT</pubDate>
+      <guid>https://calebjohn.xyz/blog/24/</guid>
+    </item>
     
     <item>
       <title>B2CC</title>
