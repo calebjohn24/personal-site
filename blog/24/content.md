@@ -8,7 +8,6 @@
 >
 > — Robert Frost
 
-
 > No lie, just know I chose my own fate
 > I drove by the fork in the road and went straight
 > — Jay Z
@@ -36,7 +35,6 @@
 - If you get the desired result the process was adequate
 - Conventional wisdom will get you conventional results
 - Power law applies to everything, plan your life accordingly
-- You're either somebody, or you're nobody
 - Nothing in life is promised other than death
 
 While I am proud of my minor achievements up to this point, I know that I am yet to craft my Magnum Opus. What that will be I still don't know, but I am grateful to be surrounded by incredible people and to have the opportunity to live in a time and place where I can make my mark on the world. The journey and cast of characters I have met up to this point has been nothing short of incredible, I have had some incredible experiences and opportunities, none of which I could have ever scripted myself.
@@ -46,6 +44,3 @@ Am I happy? Sometimes.
 Am I satisfied? Never.
 
 CJ
-
-
-
